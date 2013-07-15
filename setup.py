@@ -5,7 +5,7 @@ from Cython.Distutils import build_ext
 ext_modules=[
     Extension("RplIcmp",
               ["RplIcmp.pyx", "tinyICMPlib.pxd"],
-              extra_link_args=["-lcap", "caplib.o", "icmplib.o"],
+              extra_link_args=["caplib.o", "icmplib.o", "-lcap"],
              )
 			      ]
 
