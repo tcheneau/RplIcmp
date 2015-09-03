@@ -19,7 +19,9 @@ I'm not very sure what is the proper way to install Cython packages because I
 use exclusively the RPM built for my own needs. My best guess is that the
 following line should suffice:
 
-    python setup.py install
+	apt-get install libcap-dev # install dependancy
+	make                       # to build the library files
+    python setup.py install    # install the package
 
 Dependencies
 ------------
